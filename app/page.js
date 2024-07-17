@@ -75,7 +75,7 @@ const page = () => {
   let rendertask = <h2>No Task available</h2>
   if(tasks.length>0){
     rendertask = tasks.map((t,i) => {
-      return <li className='border-[1px] border-zinc-300 rounded-2xl h-full p-5 mb-5'>
+      return <li key={i} className='border-[1px] border-zinc-300 rounded-2xl h-full p-5 mb-5'>
       <div className=''>
         <div className="flex items-center space-x-2">
           <Checkbox id="terms" />
